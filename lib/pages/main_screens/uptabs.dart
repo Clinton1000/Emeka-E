@@ -17,6 +17,7 @@ class UpTabs extends StatefulWidget {
 class _UpTabsState extends State<UpTabs> {
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
     return DefaultTabController(
       length: 2,
       child: Scaffold(

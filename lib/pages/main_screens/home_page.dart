@@ -8,6 +8,8 @@ import 'package:changecollect/pages/utilities/config_folder.dart';
 import 'package:changecollect/pages/utilities/config_folder2.dart';
 import 'package:flutter/material.dart';
 
+late Size mq;
+
 class Homepage extends StatefulWidget {
   static const String id = 'Home_page';
 
@@ -20,6 +22,7 @@ class Homepage extends StatefulWidget {
 class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
+    mq = MediaQuery.of(context).size;
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Colors.white,
@@ -72,7 +75,7 @@ class _HomepageState extends State<Homepage> {
                                         Padding(
                                           padding: EdgeInsets.all(25.0),
                                           child: Text(
-                                            '\$40,000',
+                                            '\$40,000'.toString(),
                                             style: TextStyle(
                                                 color: Colors.white,
                                                 fontSize: 24.0,

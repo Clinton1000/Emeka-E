@@ -1,3 +1,4 @@
+import 'package:changecollect/pages/main_screens/withdrawal.dart';
 import 'package:flutter/material.dart';
 
 class FundAccount extends StatefulWidget {
@@ -55,7 +56,9 @@ class _FundAccountState extends State<FundAccount> {
                 borderRadius: BorderRadius.circular(30.0),
                 elevation: 5.0,
                 child: MaterialButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, Withdrawal.id);
+                  },
                   minWidth: 200.0,
                   height: 42.0,
                   // ignore: prefer_const_constructors

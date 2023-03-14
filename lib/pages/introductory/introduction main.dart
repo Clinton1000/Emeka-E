@@ -1,8 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
-import 'package:changecollect/pages/logs/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import '../logs/auth_page.dart';
 import 'introduction1.dart';
 import 'introduction2.dart';
 import 'introduction3.dart';
@@ -67,9 +67,11 @@ class _IntroductionMainState extends State<IntroductionMain> {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) {
-                              return OnboardingScreen();
-                            }),
+                            MaterialPageRoute(
+                              builder: (context) {
+                                return AuthPage();
+                              },
+                            ),
                           );
                         },
                         child: Text(
