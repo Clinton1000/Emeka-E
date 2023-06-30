@@ -1,4 +1,5 @@
 import 'package:changecollect/utils/text_style.dart';
+import 'package:changecollect/view/screen/authentication/enable_biometric_screen.dart';
 import 'package:changecollect/view/widget/back_button.dart';
 import 'package:changecollect/view/widget/pin_input_field.dart';
 import 'package:changecollect/view/widget/pin_keyboard.dart';
@@ -108,6 +109,7 @@ class _NewWalletPinScreenState extends State<NewWalletPinScreen> {
                       if (a.length > 3) {
                         //autoValidate = true;
                         setState(() {});
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => EnableBiometricScreen()));
                         print(pinController.text);
                       }
                     },
